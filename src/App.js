@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App container">
       <Header />
-      <h1>Hello Bitches 😎</h1>
+      <h1>Placeholder Title</h1>
       <SignUp />
       <Plans plans={plans} />
       <Footer />

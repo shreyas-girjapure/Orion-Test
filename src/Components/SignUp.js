@@ -1,9 +1,5 @@
 import React from "react";
 
-function formatDate(date) {
-  return date.toISOString().slice(0, 10);
-}
-
 export default function SignUp(props) {
   return (
     <div className="container">
@@ -37,7 +33,7 @@ export default function SignUp(props) {
               className="form-control"
               id="phoneNumber"
               pattern="[1-9][0-9]{9}"
-              maxLength="15"
+              maxLength="10"
             />
           </div>
           <div className="col">
