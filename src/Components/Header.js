@@ -28,9 +28,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 link-dark">
+              <Link to="/about" className="nav-link px-2 link-dark">
                 About
-              </a>
+              </Link>
             </li>
           </ul>
 
