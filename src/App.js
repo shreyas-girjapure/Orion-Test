@@ -3,6 +3,8 @@ import Footer from "./Components/Footer.js";
 import SignUp from "./Components/SignUp.js";
 import Plans from "./Components/Plans";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 let plans = [
   {
     description: ["first plan the next line data "],
@@ -17,15 +19,15 @@ let plans = [
     imageUrl: "https://source.unsplash.com/1000x600/?fitness",
   },
 ];
+
 function App() {
   return (
-    <div className="App container">
-      <Header />
-      <h1>Placeholder Title</h1>
-      <SignUp />
-      <Plans plans={plans} />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App container">
+        <Header />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
